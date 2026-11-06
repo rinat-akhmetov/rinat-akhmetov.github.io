@@ -20,8 +20,9 @@
     <nav class="nav wrap" aria-label="Main navigation">
       <a class="wordmark" href="#hero">Rinat Akhmetov<span>.</span></a>
       <div class="nav-actions">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
+        <a href="#client-work">Client work</a>
+        <a href="#projects">Products</a>
+        <a href="#writing">Writing</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Connect</a>
         <button id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme"><span aria-hidden="true">☾</span></button>
@@ -32,16 +33,40 @@
   <main id="main">
     <section id="hero" class="hero wrap">
       <p class="eyebrow"><span class="status-dot"></span> Forward deployed architect</p>
-      <h1>Making everyday life<br><em>a little easier.</em></h1>
+      <h1>From complex problems<br><em>to working systems.</em></h1>
       <div class="hero-bottom">
-        <p>I'm Rinat, a forward deployed architect and independent product maker. I turn real-world needs into practical software, from early ideas to deployment.</p>
-        <a class="text-link" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a>
+        <p>I'm Rinat, a forward deployed architect and independent product maker. My work connects client problems, system architecture, and hands-on delivery across machine learning, healthcare, and cloud platforms.</p>
+        <a class="text-link" href="#client-work">Explore my work <span aria-hidden="true">↘</span></a>
       </div>
-      <div class="hero-index" aria-hidden="true">01 — 02<br>SELECTED PROJECTS</div>
+      <div class="hero-index" aria-hidden="true">ARCHITECTURE<br>THROUGH DELIVERY</div>
+    </section>
+
+
+    <section id="client-work" class="section wrap">
+      <div class="section-heading"><div><p class="eyebrow">Systems built with client teams</p><h2>Selected client work<span class="accent">.</span></h2></div><span class="section-number">01 / CLIENT WORK</span></div>
+      <p class="section-intro">Work at Provectus spanning data, machine learning, cloud infrastructure, and the workflows people use every day.</p>
+      <nav class="case-nav" aria-label="Client projects"><a href="#pr3vent">Pr3vent</a><a href="#psc-biotech">PSC Biotech</a><a href="#loko-ai">Loko AI</a><a href="#enterprise-ai">Enterprise AI</a></nav>
+      <article id="pr3vent" class="case-study">
+        <div class="case-title"><p class="eyebrow">Healthcare · Computer vision</p><h3>Pr3vent</h3><p class="case-role">Solution architect &amp; sole developer</p><p>Medical imaging, from data to clinical workflow.</p><a class="text-link" href="#pr3vent">Link to this project <span aria-hidden="true">#</span></a></div>
+        <div class="case-detail"><h4>The challenge</h4><p>Support specialists reviewing newborn retinal images with a complete image-labeling and machine-learning workflow.</p><h4>The system</h4><p>The platform connects specialist labeling, dataset management, model training and evaluation, and an application for reviewing results. Its cloud infrastructure includes S3, EKS, and SageMaker.</p><p class="case-evidence"><strong>350,000 retinal images</strong><br>Dataset scale reported in the published AWS case study.</p><h4>My responsibility</h4><p>As the sole developer, I owned the architecture and implemented the labeling workflow, model training, and physician interface, with support from a DevOps engineer. I also authored the technical AWS article describing the platform.</p><a class="text-link" href="https://aws.amazon.com/blogs/apn/how-pr3vent-uses-machine-learning-on-aws-to-combat-preventable-vision-loss-in-infants/">Read the AWS article <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article id="psc-biotech" class="case-study">
+        <div class="case-title"><p class="eyebrow">Life sciences · Document intelligence</p><h3>PSC Biotech</h3><p class="case-role">Technical lead · Architecture to deployment</p><p>Turning regulatory documents into usable information.</p><a class="text-link" href="#psc-biotech">Link to this project <span aria-hidden="true">#</span></a></div>
+        <div class="case-detail"><h4>The challenge</h4><p>Automate the extraction and classification of observations in FDA Form 483 documents for review by compliance teams.</p><h4>The system</h4><p>AWS document processing combines OCR, multi-label NLP, model training, orchestration, and a review interface. The published solution connects Textract, SageMaker, Step Functions, and serverless services.</p><p class="case-evidence"><strong>More than 100 observation categories</strong><br>Classification scope described in the AWS article.</p><h4>My responsibility</h4><p>As technical lead, I owned the solution from architecture through deployment and directed ML, frontend, and backend engineers. The team implemented the system; I was responsible for its technical direction and delivery. I co-authored the case study with AWS Principal Solutions Architect Nirav Shah.</p><a class="text-link" href="https://aws.amazon.com/blogs/apn/accelerating-time-to-compliance-in-healthcare-and-life-sciences-through-automated-fda-forms-processing-with-ai-on-aws/">Read the AWS article <span aria-hidden="true">↗</span></a></div>
+      </article>
+
+      <article id="loko-ai" class="case-study">
+        <div class="case-title"><p class="eyebrow">Computer vision · Edge + cloud</p><h3>Loko AI</h3><p class="case-role">Forward deployed architect &amp; hands-on ML lead</p><p>From roadside video to vehicle-speed alerts.</p><a class="text-link" href="#loko-ai">Link to this project <span aria-hidden="true">#</span></a></div>
+        <div class="case-detail"><h4>The challenge</h4><p>Estimate vehicle speed from fixed cameras and turn video into actionable overspeed events.</p><h4>The system</h4><p>Vehicle detection and tracking run at the edge. Per-camera calibration maps image coordinates to the road plane for speed estimation. Events flow to an AWS backend and React interface for review.</p><p class="case-evidence"><strong>A field pilot across 3–4 cameras</strong><br>Development, client handoff, and consultation during the client's subsequent rollout.</p><h4>My responsibility</h4><p>I worked as a forward deployed architect and technical lead for 2–3 engineers across software, DevOps, and frontend, alongside a project manager. I personally implemented the ML pipeline: detection, tracking, calibration, and speed estimation. After handoff, I supported the client's on-site team with rollout advice.</p></div>
+      </article>
+      <article id="enterprise-ai" class="case-study">
+        <div class="case-title"><p class="eyebrow">Enterprise AI · Architecture</p><h3>Enterprise AI platform</h3><p class="case-role">Solution architecture &amp; cross-team integration</p><p>Connecting document processing, retrieval, and generation.</p><a class="text-link" href="#enterprise-ai">Link to this project <span aria-hidden="true">#</span></a></div>
+        <div class="case-detail"><h4>The challenge</h4><p>Align document ingestion, retrieval, and generation capabilities with an enterprise platform and the teams integrating with it.</p><h4>My responsibility</h4><p>My architectural work covered service boundaries, API contracts, and integration across teams. It included evaluating document-processing flows and retrieval-storage options against the platform's requirements.</p><p class="case-evidence"><strong>Architecture across teams and services</strong><br>Client name and identifying project details are confidential.</p></div>
+      </article>
     </section>
 
     <section id="projects" class="section wrap">
-      <div class="section-heading"><div><p class="eyebrow">A few things I've made</p><h2>Selected projects<span class="accent">.</span></h2></div><span class="section-number">01 / PROJECTS</span></div>
+      <div class="section-heading"><div><p class="eyebrow">Products I build independently</p><h2>Independent products<span class="accent">.</span></h2></div><span class="section-number">02 / PRODUCTS</span></div>
       <div class="projects-grid">
         <article class="project-card mila-card">
           <div class="card-top"><img src="assets/mila-icon.png" alt="" width="76" height="76"><span class="project-number">01 / iOS APP</span></div>
@@ -56,19 +81,30 @@
       </div>
     </section>
 
-    <section id="about" class="section wrap about-section">
-      <div class="section-heading"><div><p class="eyebrow">The person behind the products</p><h2>A bit about me<span class="accent">.</span></h2></div><span class="section-number">02 / ABOUT</span></div>
-      <div class="about-grid"><p class="about-lead">Curious about how things work. More curious about how they can work better.</p><div class="about-copy"><p>I'm a forward deployed architect and product maker working across AI, machine learning, and software development. I enjoy turning real-world needs into useful, dependable products, from early experiments to deployment.</p><p>My work spans language models, retrieval, computer vision, and the systems that bring them into the real world.</p><div id="skills" class="skills"><h3>Areas I work in</h3><ul><li>AI &amp; machine learning</li><li>LLMs &amp; retrieval</li><li>Computer vision</li><li>Python &amp; data</li><li>AWS &amp; MLOps</li><li>Product development</li></ul></div></div></div>
-    </section>
-
     <section id="experience" class="section wrap experience-section">
       <div class="section-heading"><div><p class="eyebrow">Along the way</p><h2>Experience<span class="accent">.</span></h2></div><span class="section-number">03 / BACKGROUND</span></div>
       <div class="experience-list">
-        <article class="experience-row"><p class="date">JUL 2025 — PRESENT</p><div><h3>Senior AI Engineer</h3><p class="company">Enable</p><p>Building AI systems, evaluation workflows, and production observability.</p></div></article>
-        <article class="experience-row"><p class="date">JAN 2018 — JUL 2025</p><div><h3>Machine learning engineering</h3><p class="company">Provectus · Latest role: Senior ML Architect</p><p>Worked across retrieval, language models, intelligent document processing, and computer vision.</p></div></article>
+        <article class="experience-row"><p class="date">JUL 2025 — OCT 2026</p><div><h3>Senior Machine Learning Engineer</h3><p class="company">Enable</p><p>Built AI systems, evaluation workflows, and production observability.</p></div></article>
+        <article class="experience-row"><p class="date">JAN 2018 — JUL 2025</p><div><h3>Senior ML Architect</h3><p class="company">Provectus</p><p>Progressed through ML engineering and architecture roles across client projects in healthcare, document processing, retrieval, and computer vision.</p></div></article>
         <article class="experience-row"><p class="date">2014 — 2017</p><div><h3>Software engineering</h3><p class="company">Provectus &amp; FOSS Labs</p><p>Earlier work in full-stack development and route optimization.</p></div></article>
       </div>
+      <div id="about" class="about-section">
+      <div class="about-grid"><p class="about-lead">Curious about how things work. More curious about how they can work better.</p><div class="about-copy"><p>I'm a forward deployed architect and product maker working across AI, machine learning, and software development. I enjoy turning real-world needs into useful, dependable products, from early experiments to deployment.</p><p>My work spans language models, retrieval, computer vision, and the systems that bring them into the real world.</p><div id="skills" class="skills"><h3>Areas I work in</h3><ul><li>AI &amp; machine learning</li><li>LLMs &amp; retrieval</li><li>Computer vision</li><li>Python &amp; data</li><li>AWS &amp; MLOps</li><li>Product development</li></ul></div></div></div>
+      </div>
+
+
       <div class="education"><span class="date">EDUCATION</span><p>M.S. Data Analysis, Kazan Federal University<br>B.S. Applied Informatics, Kazan State University</p></div>
+    </section>
+
+
+    <section id="writing" class="section wrap">
+      <div class="section-heading"><div><p class="eyebrow">Sharing the work</p><h2>Writing &amp; talks<span class="accent">.</span></h2></div><span class="section-number">04 / PUBLICATIONS</span></div>
+      <div class="writing-list">
+        <a href="https://aws.amazon.com/blogs/apn/accelerating-time-to-compliance-in-healthcare-and-life-sciences-through-automated-fda-forms-processing-with-ai-on-aws/" class="writing-item"><span class="date">AWS · 2023</span><div><h3>Automated FDA Forms Processing with AI on AWS <span aria-hidden="true">↗</span></h3><p>Co-authored with Nirav Shah. Architecture and delivery of the PSC Biotech document-processing solution.</p></div></a>
+        <a href="https://provectus.com/blog/comparison-large-language-models-biomedical-domain/" class="writing-item" id="biomedical-llms"><span class="date">PROVECTUS · 2023</span><div><h3>Exploring LLMs in the Biomedical Domain <span aria-hidden="true">↗</span></h3><p>Co-authored with Maxim Sokolov. Comparing biomedical question-answering models, quality, GPU memory, and inference performance.</p></div></a>
+        <a href="https://aws.amazon.com/blogs/apn/how-pr3vent-uses-machine-learning-on-aws-to-combat-preventable-vision-loss-in-infants/" class="writing-item"><span class="date">AWS · 2020</span><div><h3>Machine Learning for Pr3vent on AWS <span aria-hidden="true">↗</span></h3><p>Technical article covering the medical imaging platform, labeling infrastructure, training, and model evaluation.</p></div></a>
+        <a href="https://www.youtube.com/watch?v=pe8GEUVM4t8" class="writing-item"><span class="date">VIDEO</span><div><h3>Better Call YOLO <span aria-hidden="true">↗</span></h3><p>My talk on the YOLO family of object detectors, training techniques, and inference.</p></div></a>
+      </div>
     </section>
 
     <section id="contact" class="contact-section"><div class="wrap contact-inner"><div><p class="eyebrow">Let's connect</p><h2>Good things start<br>with a conversation<span>.</span></h2></div><div class="contact-links"><a href="https://www.linkedin.com/in/rinat-akhmetov/">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/rinat-akhmetov">GitHub <span aria-hidden="true">↗</span></a></div></div></section>
