@@ -1,116 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rinat Akhmetov - Machine Learning Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rinat Akhmetov — Product Maker &amp; AI Engineer</title>
+  <meta name="description" content="Rinat Akhmetov builds thoughtful products for everyday life. Explore Mila, Heimdall Focus, and his background in AI engineering.">
+  <link rel="canonical" href="https://rinat-akhmetov.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Rinat Akhmetov — Product Maker &amp; AI Engineer">
+  <meta property="og:description" content="Thoughtful products for everyday life, built by Rinat Akhmetov.">
+  <meta property="og:url" content="https://rinat-akhmetov.github.io/">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="logo">Rinat Akhmetov</div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#rules">Rules</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>
-                    <button id="theme-toggle">🌙</button>
-                </li>
-            </ul>
-        </nav>
-    </header>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="wordmark" href="#hero">Rinat Akhmetov<span>.</span></a>
+      <div class="nav-actions">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Connect</a>
+        <button id="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme"><span aria-hidden="true">☾</span></button>
+      </div>
+    </nav>
+  </header>
 
-    <section id="hero">
-        <h1>Hi, I'm Rinat Akhmetov</h1>
-        <p>Staff Machine Learning Engineer</p>
+  <main id="main">
+    <section id="hero" class="hero wrap">
+      <p class="eyebrow"><span class="status-dot"></span> Product maker <span class="eyebrow-divider">/</span> AI engineer</p>
+      <h1>Making everyday life<br><em>a little easier.</em></h1>
+      <div class="hero-bottom">
+        <p>I'm Rinat, a Senior AI Engineer and independent product maker. I build thoughtful software for the moments that make up our days.</p>
+        <a class="text-link" href="#projects">Explore my projects <span aria-hidden="true">↘</span></a>
+      </div>
+      <div class="hero-index" aria-hidden="true">01 — 02<br>SELECTED PROJECTS</div>
     </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a Lead Machine Learning Solution Architect with over 10 years of experience in Computer Vision and
-            Natural Language Processing, specializing in the Biomedical, Finance, and Manufacturing sectors. I have
-            extensive experience in quickly designing prototypes and scaling products for enterprise use.</p>
+    <section id="projects" class="section wrap">
+      <div class="section-heading"><div><p class="eyebrow">A few things I've made</p><h2>Selected projects<span class="accent">.</span></h2></div><span class="section-number">01 / PROJECTS</span></div>
+      <div class="projects-grid">
+        <article class="project-card mila-card">
+          <div class="card-top"><img src="assets/mila-icon.png" alt="" width="76" height="76"><span class="project-number">01 / iOS APP</span></div>
+          <div class="card-content"><p class="project-category">CARE, TOGETHER</p><h3>Mila</h3><p>A little less to carry. Track feeds, sleep, and diapers, and keep your family's care in one place.</p></div>
+          <div class="card-links"><a href="https://withmila.app/">Visit website <span aria-hidden="true">↗</span></a><a href="https://apps.apple.com/ca/app/mila-baby-tracker/id6780299843">App Store <span aria-hidden="true">↗</span></a></div>
+        </article>
+        <article class="project-card heimdall-card">
+          <div class="card-top"><img src="assets/heimdall-icon.png" alt="" width="76" height="76"><span class="project-number">02 / CHROME EXTENSION</span></div>
+          <div class="card-content"><p class="project-category">A LITTLE MORE FOCUS</p><h3>Heimdall Focus</h3><p>Make room for focus by blocking distracting sites, setting schedules and daily limits, and hiding YouTube distractions.</p></div>
+          <div class="card-links"><a href="https://chromewebstore.google.com/detail/heimdall-focus/kajkdbkdgmjjllehhjbffhbgnhekippa">Chrome Web Store <span aria-hidden="true">↗</span></a></div>
+        </article>
+      </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>Deep Learning</li>
-            <li>Natural Language Processing</li>
-            <li>Data Analysis</li>
-            <!-- Add more skills as needed -->
-        </ul>
+    <section id="about" class="section wrap about-section">
+      <div class="section-heading"><div><p class="eyebrow">The person behind the products</p><h2>A bit about me<span class="accent">.</span></h2></div><span class="section-number">02 / ABOUT</span></div>
+      <div class="about-grid"><p class="about-lead">Curious about how things work. More curious about how they can work better.</p><div class="about-copy"><p>I'm an engineer and product maker working across AI, machine learning, and software development. I enjoy taking ideas from early experiments to useful, dependable products.</p><p>My work spans language models, retrieval, computer vision, and the systems that bring them into the real world.</p><div id="skills" class="skills"><h3>Areas I work in</h3><ul><li>AI &amp; machine learning</li><li>LLMs &amp; retrieval</li><li>Computer vision</li><li>Python &amp; data</li><li>AWS &amp; MLOps</li><li>Product development</li></ul></div></div></div>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="job">
-            <h3>Lead Machine Learning Engineer · Provectus · Toronto, ON, Canada</h3>
-            <span>Sep '20 - Present</span>
-            <ul>
-                <li>Led a team of 10+ engineers in designing and developing an Intelligent Document Processing
-                    pipeline...</li>
-                <!-- Add more bullet points -->
-            </ul>
-        </div>
-        <!-- Add more job experiences similarly -->
+    <section id="experience" class="section wrap experience-section">
+      <div class="section-heading"><div><p class="eyebrow">Along the way</p><h2>Experience<span class="accent">.</span></h2></div><span class="section-number">03 / BACKGROUND</span></div>
+      <div class="experience-list">
+        <article class="experience-row"><p class="date">JUL 2025 — PRESENT</p><div><h3>Senior AI Engineer</h3><p class="company">Enable</p><p>Building AI systems, evaluation workflows, and production observability.</p></div></article>
+        <article class="experience-row"><p class="date">JAN 2018 — JUL 2025</p><div><h3>Machine learning engineering</h3><p class="company">Provectus · Latest role: Senior ML Architect</p><p>Worked across retrieval, language models, intelligent document processing, and computer vision.</p></div></article>
+        <article class="experience-row"><p class="date">2014 — 2017</p><div><h3>Software engineering</h3><p class="company">Provectus &amp; FOSS Labs</p><p>Earlier work in full-stack development and route optimization.</p></div></article>
+      </div>
+      <div class="education"><span class="date">EDUCATION</span><p>M.S. Data Analysis, Kazan Federal University<br>B.S. Applied Informatics, Kazan State University</p></div>
     </section>
 
-    <section id="rules">
-        <h2>My Rule List</h2>
-        <div class="rule-category">
-            <h3>Task Assignment and Acceptance</h3>
-            <ul>
-                <li><strong>Rule:</strong> The person who assigns the task is responsible for its acceptance after
-                    completion.</li>
-                <li><strong>Best Practices:</strong>
-                    <ul>
-                        <li>Clearly formulate requirements and expectations when assigning a task.</li>
-                        <li>After completing the task, the executor notifies the assigner and provides results for
-                            verification.</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="rule-category">
-            <h3>Merge Request Process</h3>
-            <ul>
-                <li><strong>Rule:</strong> The executor creates a Merge Request and adds the necessary reviewers.</li>
-                <li><strong>Best Practices:</strong>
-                    <ul>
-                        <li>In the Merge Request description, specify the purpose of the changes and the affected code
-                            areas.</li>
-                        <li>Use tagging (@username) to notify reviewers.</li>
-                        <li>Prefer using automated notifications over personal messages to avoid overloading
-                            communication channels.</li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!-- Add more rule categories similarly -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:appvshare@gmail.com">appvshare@gmail.com</a></p>
-        <p>Phone: <a href="tel:+14372569794">+1 (437) 256-9794</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/rinat-akhmetov" target="_blank">linkedin.com/in/rinat-akhmetov</a>
-        </p>
-        <p>GitHub: <a href="https://github.com/rinat-akhmetov" target="_blank">github.com/rinat-akhmetov</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Rinat Akhmetov</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <section id="contact" class="contact-section"><div class="wrap contact-inner"><div><p class="eyebrow">Let's connect</p><h2>Good things start<br>with a conversation<span>.</span></h2></div><div class="contact-links"><a href="https://www.linkedin.com/in/rinat-akhmetov/">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/rinat-akhmetov">GitHub <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="wrap footer"><span>© 2026 Rinat Akhmetov</span><a href="#hero">Back to top ↑</a></footer>
 </body>
-
 </html>
